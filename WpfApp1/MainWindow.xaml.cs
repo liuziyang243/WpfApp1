@@ -24,5 +24,13 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Btn_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (this.FindResource("human") is Human human)
+            {
+                MessageBox.Show(human.Child.Name);
+            }
+        }
     }
 }

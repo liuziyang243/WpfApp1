@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:Human x:Key="human" Name="Tim" Child="Kate"></local:Human>
+    </Window.Resources>
     <Grid>
-        
+        <!-- <Rectangle Width="100" Height="80" Stroke="Black" Fill="Blue" RadiusX="10" RadiusY="10"/>
+        -->
+        <!-- <Path Data="M 0,0 L 200,100 L 100,200 Z" Stroke="Black" Fill="Red"/> -->
+        <Button x:Name="btn" Content="Show" Click="Btn_OnClick" Height="30" Width="60"></Button>
     </Grid>
 </Window>
